@@ -1,6 +1,18 @@
+:root {
+  --main-color: #3a3b88;
+  --secondary-color: #0a0844;
+  --accent-color: #4b285e;
+  --contrast-color: #f2f1f9;
+}
+
 body {
   font-family: "Raleway", sans-serif;
+  background-color: var(--main-color);
+  color: var(--contrast-color);
 }
+
+.bg-brand {
+  background-color: var(--secondary-color);}
 
 /* Hero Section */
 
@@ -13,18 +25,26 @@ body {
 
 /* Mis trabajos */
 
+#Mis-trabajos {
+  background-color: var(--accent-color);
+}
+
 #Mis-trabajos .image-top {
-  height: 250px;
+  height: 450px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
+
+#Mis-trabajos .card {
+  color: #373a3c;
+}
+
 
 /* Contacto */
 
 #Contacto form label {
   font-weight: 700;
-  color: #373a3c;
 }
 
 @media (max-width: 768px) {
