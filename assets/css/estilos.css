@@ -12,43 +12,58 @@ body {
 }
 
 .bg-brand {
-  background-color: var(--secondary-color);}
+  background-color: var(--secondary-color);
+}
+ 
 
-/* Hero Section */
 
-#Hero-Section {
+:target {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  :target {
+    scroll-margin-top: 210px;
+  }
+}
+
+/* Header*/
+
+#header {
+  background-color: var(--accent-color);
   background-image: url("/assets/img/bg-technology.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
 }
 
-/* Mis trabajos */
+/* Portafolio */
 
-#Mis-trabajos {
+#portafolio {
   background-color: var(--accent-color);
 }
 
-#Mis-trabajos .image-top {
+#portafolio .image-top {
   height: 450px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
-#Mis-trabajos .card {
+#portafolio .card {
   color: #373a3c;
+  border-color: #707070;
 }
 
 
 /* Contacto */
 
-#Contacto form label {
+#contacto form label {
   font-weight: 700;
 }
 
 @media (max-width: 768px) {
-  #Contacto form label {
+  #contacto form label {
     font-weight: 400;
   }
 
